@@ -71,13 +71,14 @@ docs/_build/
 # PyBuilder
 .pybuilder/
 target/
-
+medical_warehouse/
 # Jupyter Notebook
 .ipynb_checkpoints
 
 # IPython
 profile_default/
 ipython_config.py
+medical_warehouse/
 
 # pyenv
 #   For a library or package, you might want to ignore these files since the code is

@@ -2,6 +2,11 @@ import os
 import csv
 import logging
 from pathlib import Path
+import torch
+import functools
+# Monkeypatch torch.load to fix PyTorch 2.6+ weights_only issue
+torch.load = functools.partial(torch.load, weights_only=False)
+
 from ultralytics import YOLO
 import pandas as pd
 
